@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Ramadhan</title>
+
+```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+    }
+
+    header {
+        background: linear-gradient(90deg, #0f9d58, #34a853);
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    nav {
+        background: #222;
+        padding: 12px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #34a853;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .item img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+
+    .item:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Overlay caption */
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .item:hover .overlay {
+        opacity: 1;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+    }
+</style>
+```
+
+</head>
+<body>
+
+<header>
+    <h1>Galeri Kegiatan</h1>
+    <p>Dokumentasi kegiatan Ramadhan & Lebaran</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="kegiatan.html">Kegiatan</a>
+    <a href="galeri.html">Galeri</a>
+</nav>
+
+<div class="container">
+
+```
+<div class="gallery">
+
+    <div class="item">
+        <img src="images/mal.jpeg">
+        <div class="overlay">Jalan-Jalan di Mall</div>
+    </div>
+
+    <div class="item">
+        <img src="images/jembatan.jpeg">
+        <div class="overlay">Jembatan Ampera Palembang</div>
+    </div>
+
+    <div class="item">
+        <img src="images/bukber.jpeg">
+        <div class="overlay">Buka Puasa Bersama</div>
+    </div>
+
+    <div class="item">
+        <img src="images/bukber2.jpeg">
+        <div class="overlay">Buka Puasa Bersama Part 2</div>
+    </div>
+
+    <div class="item">
+        <img src="images/thr.jpeg">
+        <div class="overlay">Berbagi THR</div>
+    </div>
+
+</div>
+```
+
+</div>
+
+<footer>
+    <p>© Alfaizh Anha - 2523152</p>
+</footer>
+
+</body>
+</html>
